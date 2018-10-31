@@ -1,3 +1,8 @@
+#
+# FileSystemClasses
+#	- File Manager
+
+
 # libraries
 import os
 
