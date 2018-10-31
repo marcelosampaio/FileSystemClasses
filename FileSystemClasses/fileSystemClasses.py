@@ -1,6 +1,9 @@
 #
 # FileSystemClasses
 #	- File Manager
+#		. create file
+#		. append file
+#		. read file
 
 
 # libraries
@@ -38,5 +41,8 @@ class FileManager(object):
 		print("🍺 -...-Content: ", content)
 		print("🍺 -FileManager-end-method")
 
-
+	def readFile(self):
+		instanceFile = open(self.filePath, "r")
+		instanceFile.seek(0)
+		return instanceFile.read()
 
