@@ -52,7 +52,7 @@ fileNamePath = "/Users/marcelo/Documents/MAS/Python_Production/FileSystemClasses
 # -----------------------------
 # append some content to a file
 # -----------------------------
-# content = "Second line has been appended\n"
+# content = "talvez esta seja a ultima linha do arquivo\n"
 # appendFile(fileNamePath, content)
 
 # -----------------
