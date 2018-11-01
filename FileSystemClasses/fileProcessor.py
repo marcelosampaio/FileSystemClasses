@@ -52,12 +52,18 @@ fileNamePath = "/Users/marcelo/Documents/MAS/Python_Production/FileSystemClasses
 # -----------------------------
 # append some content to a file
 # -----------------------------
-# content = "talvez esta seja a ultima linha do arquivo\n"
+# content = "End of the file reached\n" 
 # appendFile(fileNamePath, content)
 
 # -----------------
 # read fiel content
 # -----------------
 content = readFile(fileNamePath)
-print("------ returns file content: \n", content)
+
+lines = content.split("\n")
+for line in lines:
+	print("		--> ", line)
+
+
+# print("------ returns file content: \n", content)
 
