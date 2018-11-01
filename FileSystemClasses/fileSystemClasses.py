@@ -44,5 +44,9 @@ class FileManager(object):
 	def readFile(self):
 		instanceFile = open(self.filePath, "r")
 		instanceFile.seek(0)
+
+		print("🍺 -FileManager-readFile finished")
+		print("🍺 -...-FilePath: ", self.filePath)
+
 		return instanceFile.read()
 
