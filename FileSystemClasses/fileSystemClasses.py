@@ -1,8 +1,11 @@
 #
+# Author: Marcelo Sampaio
+#
 # FileSystemClasses
 #	- File Manager
 #		. create file
 #		. append file
+#		. read file
 #		. read file
 
 
@@ -49,4 +52,8 @@ class FileManager(object):
 		print("🍺 -...-FilePath: ", self.filePath)
 
 		return instanceFile.read()
+
+	def deleteFile(self, filePathName):
+		os.remove(filePathName)
+		print("🍺 -FileManager-deleteFIle finished")
 

@@ -1,3 +1,6 @@
+#
+# Author: Marcelo Sampaio
+#
 # FileProcessor.py
 # this a sample program that will use module FileSystemClasses.py for iterating with files
 # production version
@@ -5,6 +8,7 @@
 #		. create file
 #		. append file
 #		. read file
+#		. delete file
 
 ## Modules
 import fileSystemClasses
@@ -36,12 +40,20 @@ def readFile(filePath):
 	# create file content
 	return fsc.readFile()
 
+def deleteFile(filePath):
+	# file system classes - file manager object - create a new file
+	fsc = fileSystemClasses.FileManager()
+	# set file path
+	fsc.setFilePath(filePath)
+	# delete specif file
+	fsc.deleteFile(filePath)
+
 
 # -------------------
 # Main Body
 # -------------------
 
-fileNamePath = "/Users/marcelo/Documents/MAS/Python_Production/FileSystemClasses/outputFile.txt"
+# fileNamePath = "/Users/marcelo/Documents/MAS/Python_Production/FileSystemClasses/outputFile.txt"
 
 # ----------------------
 # crete the working file
@@ -56,13 +68,19 @@ fileNamePath = "/Users/marcelo/Documents/MAS/Python_Production/FileSystemClasses
 # appendFile(fileNamePath, content)
 
 # -----------------
-# read fiel content
+# read file content
 # -----------------
-content = readFile(fileNamePath)
+# content = readFile(fileNamePath)
 
-lines = content.split("\n")
-for line in lines:
-	print("		--> ", line)
+# lines = content.split("\n")
+# for line in lines:
+# 	print("		--> ", line)
+
+
+# -----------------
+# delete file 
+# -----------------
+# deleteFile(fileNamePath)
 
 
 # print("------ returns file content: \n", content)
